@@ -12,7 +12,6 @@ module.exports = api => {
 
   api.render('./template')
 
-
   api.onCreateComplete(() => {
     // Linting the generated files
     if (api.hasPlugin('eslint')) {
@@ -25,4 +24,5 @@ module.exports = api => {
       }
     }
   })
+  
 }

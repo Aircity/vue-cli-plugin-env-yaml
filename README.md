@@ -1,6 +1,4 @@
-# vue-cli-plugin-pages
-
-This is a vue-cli 3.x plugin to build multi-page application.
+# vue-cli-plugin-env-yaml
 
 ## Getting started
 

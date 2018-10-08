@@ -16,7 +16,7 @@
     "url": "git+https://github.com/Aircity/vue-cli-plugin-env-yaml.git"
   },
   "homepage": "https://github.com/Aircity/vue-cli-plugin-env-yaml.git#readme",
-  "description": "vue-cli 3 plugin to build multi-page application",
+  "description": "vue-cli 3 plugin",
   "keywords": [
     "vue",
     "vue-cli",
