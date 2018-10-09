@@ -1,5 +1,39 @@
 # vue-cli-plugin-env-yaml
 
+This is a vue-cli 3.x plugin to inject environment variables.
+
+## Environment variables injection
+
+env.yaml:
+
+```
+baseURL:
+ DEV: dev.org 
+ QA: qa.org 
+ PRD: prd.org
+```
+
+npm run build
+
+```
+console.log(baseURL)
+// => dev.org
+```
+
+npm run build:qa
+
+```
+console.log(baseURL)
+// => qa.org
+```
+
+npm run build:prd
+
+```
+console.log(baseURL)
+// => prd.org
+```
+
 ## Getting started
 
 :warning: Make sure you have vue-cli 3.x.x:
