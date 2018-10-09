@@ -1,5 +1,4 @@
 module.exports = api => {
-
   api.extendPackage({
     devDependencies: {
       "cross-env": "^5.2.0"
@@ -9,7 +8,5 @@ module.exports = api => {
       "build:prd": "cross-env BUILD_ENV=PRD vue-cli-service build"
     }
   })
-
   api.render('./template')
-  
 }
