@@ -11,18 +11,5 @@ module.exports = api => {
   })
 
   api.render('./template')
-
-  api.onCreateComplete(() => {
-    // Linting the generated files
-    if (api.hasPlugin('eslint')) {
-      // Lint generated/modified files
-      try {
-        const lint = require('@vue/cli-plugin-eslint/lint')
-        lint({ silent: true }, api)
-      } catch (e) {
-        // No ESLint vue-cli plugin
-      }
-    }
-  })
   
 }
