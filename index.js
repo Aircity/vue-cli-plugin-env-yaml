@@ -1,16 +1,16 @@
-const yaml = require('js-yaml')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const Yaml = require('js-yaml')
 
 module.exports = api => {
   api.chainWebpack(config => {
     config.plugin('copy')
       .use(new CopyWebpackPlugin([
         {
-          from: 'config.yaml',
-          to: 'baseURL.js',
+          from: 'env.yaml',
+          to: 'env.js',
           transform (content) {
             const BUILD_ENV = process.env.BUILD_ENV || 'DEV'
-            const config = yaml.safeLoad(content)
+            const config = Yaml.safeLoad(content)
             return (
               Object.keys(config)
                 .map(key => {
